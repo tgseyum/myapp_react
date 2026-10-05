@@ -4,6 +4,7 @@ import Student from "./components/Student";
 import Profile from "./components/Profile";
 import Contact from "./components/Contact"
 import ProductCard from "./components/ProductCard";
+import Contact4 from "./components/Contact4";
 function App() {
   const [name, setName]=useState("Alex");
 
@@ -18,11 +19,12 @@ function App() {
        <button onClick={()=>setName("Aron")}>Change name</button>
        <button onClick={handlechangename}>Change name again</button>
        <Student /> */}
-       <Profile />
+       {/* <Profile />
        <Contact />
        <ProductCard name="Phone" price={100} category="Mobile"/>
        <ProductCard name="laptop" price={1200} category="Computer"/>
-       <ProductCard name="ipad" price="500" category="Mobile" />
+       <ProductCard name="ipad" price="500" category="Mobile" /> */}
+       <Contact4 />
     </>
   )
 }

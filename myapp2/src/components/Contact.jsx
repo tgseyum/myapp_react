@@ -1,36 +1,27 @@
 
 
+//==================================================
 //Uncontrolled example
-import { useRef } from "react";
+import { useRef, useState } from "react"
 
 function Contact() {
+    const nameInput = useRef()
+    const [name, setName] = useState("")
 
-const nameInput = useRef(); 
+    const showName = () => {
+        setName(nameInput.current.value)
+        console.log(nameInput.current.value)
+    }
+    return (
+        <div>
 
-const showName = () => {
-    alert(nameInput.current.value);
-    console.log(nameInput.current.value)
-};
+            <h2>Name Form</h2>
+            <input type="text" ref={nameInput} placeholder="Enter your name" />
+            <button onClick={showName}>Show Name</button>
+            <p>Name: {name}</p>
 
-return (
-    <div>
-
-        <h2>Name Form</h2>
-
-        <input
-            type="text"
-            ref={nameInput}
-            placeholder="Enter your name"
-        />
-
-        <button onClick={showName}>
-            Show Name
-        </button>
-
-    </div>
-);
-
-
+        </div>
+    )
 }
 
 export default Contact
