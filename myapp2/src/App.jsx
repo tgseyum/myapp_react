@@ -8,6 +8,10 @@ import Contact4 from "./components/Contact4";
 import Counter from "./comp/Counter";
 import ShoppingCart from "./comp/ShoppingCart";
 import Users from "./comp/User";
+import StudentStatus from "./comp/StudentStatus";
+import Course from "./comp/Course";
+import ShoppingCart2 from "./comp/ShoppingCart2";
+import ShoppingCart3 from "./comp/ShoppingCart3";
 
 function App() {
   // const [name, setName]=useState("Alex");
@@ -22,6 +26,10 @@ function App() {
         <h2>Shopping cart example</h2>
         <ShoppingCart />
         <Users />
+        <StudentStatus />
+        <Course />
+        <ShoppingCart2 />
+        <ShoppingCart3></ShoppingCart3>
 
        {/* <h1>useState hook leesson</h1>
        <p>{name}</p>
