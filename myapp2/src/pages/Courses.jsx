@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router"
+import CourseCard from "./CourseCard"
 
 function Courses(){
     return(
@@ -11,8 +12,10 @@ function Courses(){
         </div>
         <hr />
         <Outlet />
+        <CourseCard />
         
-        
+          <CourseCard />
+          
         </>
     )
 }
