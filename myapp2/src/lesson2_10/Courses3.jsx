@@ -28,9 +28,11 @@ function Child(props){
         </div>
     )
 }
+
 function Courses3() {
     const[message, setMessage]=useState("")
     const[greeting, setGreeting]=useState("")
+    
     const handleMessage = (message) => { setMessage(message); };
     const handlegreeting = (greeting)=>{setGreeting(greeting)}
 
